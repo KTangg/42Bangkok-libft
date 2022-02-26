@@ -6,31 +6,31 @@
 /*   By: spoolpra <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:11:17 by spoolpra          #+#    #+#             */
-/*   Updated: 2022/02/17 22:41:47 by spoolpra         ###   ########.fr       */
+/*   Updated: 2022/02/18 19:10:38 by spoolpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#ifndef LIBFTPRINTF_H
+# define LIBFTPRINTF_H
 
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
 
-char	*get_percent(void);
-char	*get_ud(va_list *arg);
-char	*get_ptr(va_list *arg);
-char	*get_str(va_list *arg);
-char	*get_int(va_list *arg);
-char	*get_dec(va_list *arg);
-char	*get_hexu(va_list *arg);
-char	*get_hexl(va_list *arg);
-char	*get_char(va_list *arg, int *i);
-char	*var_to_str(char c, va_list *arg, int *i);
-char	*create_str(char *format, va_list *arg, int *i);
-char	*ft_strjoin(const char *s1, const char *s2);
-char	*append_str(char *str1, char *start, size_t n);
-char	*make_str(char *str, char *format, va_list *arg, int *i);
-char	*append_variable(char *str1, char c, va_list *arg, int *i);
+int		ft_printf(const char *format, ...);
+int		valid_flag(char *str);
+char	*ft_itoa(long n);
+char	*get_format(char **format);
+char	*extend_format(char *var_format, void *var, size_t *var_size);
+void	*get_percent(size_t *var_size);
+void	*get_ud(va_list *arg, size_t *var_size);
+void	*get_str(va_list *arg, size_t *var_size);
+void	*get_dec(va_list *arg, size_t *var_size);
+void	*get_int(va_list *arg, size_t *var_size);
+void	*get_ptr(va_list *arg, size_t *var_size);
+void	*get_char(va_list *arg, size_t *var_size);
+void	*get_hex(va_list *arg, size_t *var_size, int mode);
+void	*realloc_printf(void *ptr, size_t old_size, size_t new_size);
+void	*memjoin(void *ptr1, void *ptr2, size_t p1_size, size_t p2_size);
 
 #endif
