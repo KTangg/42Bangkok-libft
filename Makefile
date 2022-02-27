@@ -6,13 +6,13 @@
 #    By: spoolpra <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/14 18:33:16 by spoolpra          #+#    #+#              #
-#    Updated: 2022/02/24 15:41:40 by spoolpra         ###   ########.fr        #
+#    Updated: 2022/02/27 15:34:11 by spoolpra         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-IS_LIBC = srcs/ft_isalnum.c srcs/ft_isascii.c srcs/ft_isprint.c srcs/ft_isdigit.c srcs/ft_isalpha.c
+IS_LIBC = srcs/ft_isalnum.c srcs/ft_isascii.c srcs/ft_isprint.c srcs/ft_isdigit.c srcs/ft_isalpha.c srcs/ft_isspace.c
 TO_LIBC = srcs/ft_toupper.c srcs/ft_tolower.c srcs/ft_atoi.c
 STR_LIBC = srcs/ft_strchr.c srcs/ft_strrchr.c srcs/ft_strlen.c srcs/ft_strncmp.c srcs/ft_strlcpy.c srcs/ft_strlcat.c srcs/ft_strnstr.c srcs/ft_strdup.c
 MEM_LIBC = srcs/ft_memset.c srcs/ft_bzero.c srcs/ft_memcpy.c srcs/ft_memmove.c srcs/ft_memchr.c srcs/ft_memcmp.c srcs/ft_calloc.c
@@ -37,7 +37,7 @@ $(NAME): $(OBJS)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -I $(INCS) -o $@
 clean:
-	$(RM) $(OBJS_BONUS)
+	$(RM) srcs/*.o
 fclean: clean
 	$(RM) $(NAME)
 re: fclean all
