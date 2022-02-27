@@ -23,6 +23,7 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
+int		ft_isspace(int c);
 int		ft_isascii(int c);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
