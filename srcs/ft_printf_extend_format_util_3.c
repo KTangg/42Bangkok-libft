@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   extend_format_util_3.c                             :+:      :+:    :+:   */
+/*   ft_printf_extend_format_util_3.c                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: spoolpra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: spoolpra <spoolpra@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 21:46:09 by spoolpra          #+#    #+#             */
-/*   Updated: 2022/02/28 21:46:09 by spoolpra         ###   ########.fr       */
+/*   Updated: 2022/03/02 23:30:07 by spoolpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 static void	filling(void *var, size_t n, char c)
 {

@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   extend_format_util_2.c                             :+:      :+:    :+:   */
+/*   ft_printf_extend_format_util_2.c                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: spoolpra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: spoolpra <spoolpra@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 20:54:18 by spoolpra          #+#    #+#             */
-/*   Updated: 2022/02/28 20:54:18 by spoolpra         ###   ########.fr       */
+/*   Updated: 2022/03/02 23:30:07 by spoolpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 char	*extend_format_n_2(char *var_format, void *var, size_t *var_size)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_util_1.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: spoolpra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: spoolpra <spoolpra@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/20 00:37:39 by spoolpra          #+#    #+#             */
-/*   Updated: 2022/02/20 00:37:39 by spoolpra         ###   ########.fr       */
+/*   Updated: 2022/03/02 23:30:07 by spoolpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 void	*get_char(va_list *arg, size_t *var_size)
 {

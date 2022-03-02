@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   extend_format.c                                    :+:      :+:    :+:   */
+/*   ft_printf_extend_format.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: spoolpra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: spoolpra <spoolpra@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 16:26:55 by spoolpra          #+#    #+#             */
-/*   Updated: 2022/02/23 16:26:55 by spoolpra         ###   ########.fr       */
+/*   Updated: 2022/03/02 23:30:07 by spoolpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	extend_hex(void **var, size_t *var_size, char **var_format, char c)
 {
