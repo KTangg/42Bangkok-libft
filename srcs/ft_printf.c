@@ -6,10 +6,11 @@
 /*   By: spoolpra <spoolpra@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:50:48 by spoolpra          #+#    #+#             */
-/*   Updated: 2022/03/02 23:30:07 by spoolpra         ###   ########.fr       */
+/*   Updated: 2022/03/02 23:32:17 by spoolpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "ft_printf.h"
 
 static size_t	print_out(char *format, va_list *arg);

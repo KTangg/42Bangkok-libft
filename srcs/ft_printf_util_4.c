@@ -6,10 +6,11 @@
 /*   By: spoolpra <spoolpra@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 12:49:54 by spoolpra          #+#    #+#             */
-/*   Updated: 2022/03/02 23:30:07 by spoolpra         ###   ########.fr       */
+/*   Updated: 2022/03/02 23:32:02 by spoolpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "ft_printf.h"
 
 static char	*create_hex_char(unsigned long nbr, char *base_16)

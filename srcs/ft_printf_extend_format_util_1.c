@@ -6,10 +6,11 @@
 /*   By: spoolpra <spoolpra@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 17:29:45 by spoolpra          #+#    #+#             */
-/*   Updated: 2022/03/02 23:30:07 by spoolpra         ###   ########.fr       */
+/*   Updated: 2022/03/02 23:31:29 by spoolpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "ft_printf.h"
 
 static void	filling(void *var, size_t n, char c)

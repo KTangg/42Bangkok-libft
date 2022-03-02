@@ -6,10 +6,11 @@
 /*   By: spoolpra <spoolpra@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 14:19:35 by spoolpra          #+#    #+#             */
-/*   Updated: 2022/03/02 23:30:07 by spoolpra         ###   ########.fr       */
+/*   Updated: 2022/03/02 23:31:41 by spoolpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "ft_printf.h"
 
 static int	check_prefix_2(char **format, char c)

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                      :+:      :+:    :+:   */
+/*   libftprintf.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: spoolpra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: spoolpra <spoolpra@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:11:17 by spoolpra          #+#    #+#             */
-/*   Updated: 2022/02/18 19:10:38 by spoolpra         ###   ########.fr       */
+/*   Updated: 2022/03/02 23:34:14 by spoolpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,18 @@
 
 int		ft_printf(const char *format, ...);
 int		valid_flag(char *str);
-char	*ft_itoa(long n);
+int		extend_spc(void **var, size_t *var_size, char **var_format);
+int		extend_pos(void **var, size_t *var_size, char **var_format);
+int		cutting_flag(void **var, size_t *var_size, char **var_format);
+int		extend_right(void **var, size_t *var_size, char **var_format);
+int		extend_hex(void **var, size_t *var_size, char **var_format, char c);
+int		extend_zero(void **var, size_t *var_size, char **format, size_t org);
+int		extend_min(void **var, size_t *var_size, char **var_format, size_t org);
+int		extend_dot(void **var, size_t *var_size, char **var_format, size_t org);
 char	*get_format(char **format);
 char	*extend_format(char *var_format, void *var, size_t *var_size);
+char	*extend_format_n(char *var_format, void *var, size_t *var_size);
+char	*extend_format_s(char *var_format, void *var, size_t *var_size);
 void	*get_percent(size_t *var_size);
 void	*get_ud(va_list *arg, size_t *var_size);
 void	*get_str(va_list *arg, size_t *var_size);
