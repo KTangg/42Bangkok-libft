@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: spoolpra <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: spoolpra <spoolpra@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/14 18:33:16 by spoolpra          #+#    #+#              #
-#    Updated: 2022/02/27 15:34:11 by spoolpra         ###   ########.fr        #
+#    Updated: 2022/03/02 23:27:31 by spoolpra         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,8 @@ LIBC = $(IS_LIBC) $(TO_LIBC) $(STR_LIBC) $(MEM_LIBC)
 STR_ADDC = ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c
 PUT_ADDC = ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 LST_ADDC = ft_lstsize.c ft_lstnew.c ft_lstmap.c ft_lstlast.c ft_lstiter.c ft_lstdelone.c ft_lstclear.c ft_lstadd_front.c ft_lstaddback.c
-PRINTF = ft_printf.c ft_printf_extend_format.c ft_printf_extend_format_util_1.c ft_printf_get_format.c ft_printf_get_format_util_1.c ft_printf_helper.c ft_printf_util_1.c ft_printf_util_2.c ft_printf_util_3.c ft_printf_util_4.c
+PRINTF = ft_printf.c ft_printf_extend_format.c ft_printf_extend_format_util_1.c ft_printf_get_format.c ft_printf_get_format_util_1.c ft_printf_helper.c ft_printf_util_1.c ft_printf_util_2.c ft_printf_util_3.c ft_printf_util_4.c \
+ft_printf_extend_format_util_2.c ft_printf_extend_format_util_3.c ft_printf_extend_format_util_4.c
 GNL = ft_get_next_line.c ft_get_next_line_utils.c
 ADDC = $(STR_ADDC) $(PUT_ADDC) $(PRINTF) $(GNL)
 SRCS = $(LIBC) $(ADDC)

@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 static char	*create_hex_char(unsigned long nbr, char *base_16)
 {

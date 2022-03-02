@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 void	*get_ud(va_list *arg, size_t *var_size)
 {
